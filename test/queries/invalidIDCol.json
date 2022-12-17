@@ -1,0 +1,19 @@
+{
+    "title": "invalid Key for EQ",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_dept": "engl"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "another_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

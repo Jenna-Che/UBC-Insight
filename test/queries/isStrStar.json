@@ -1,0 +1,35 @@
+{
+    "title": "Str Star IS",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "EQ": {
+                        "courses_avg": 96
+                    }
+                },
+                {
+                    "IS": {
+                        "courses_dept": "p*"
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"courses_dept":"psyc","courses_id":"549","courses_avg":96},
+        {"courses_dept":"psyc","courses_id":"501","courses_avg":96},
+        {"courses_dept":"psyc","courses_id":"501","courses_avg":96},
+        {"courses_dept":"phil","courses_id":"120","courses_avg":96},
+        {"courses_dept":"pcth","courses_id":"549","courses_avg":96}]
+}
+
+

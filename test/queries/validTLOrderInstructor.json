@@ -1,0 +1,25 @@
+{
+    "title": "SELECT dept, avg WHERE avg > 97",
+    "query": {
+        "WHERE": {
+            "LT": {
+                "courses_pass": 1
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_uuid",
+                "courses_avg",
+                "courses_pass"
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"courses_uuid":"16427","courses_avg":4,"courses_pass":0},
+        {"courses_uuid":"16428","courses_avg":4,"courses_pass":0},
+        {"courses_uuid":"84769","courses_avg":4.5,"courses_pass":0},
+        {"courses_uuid":"89536","courses_avg":0,"courses_pass":0},
+        {"courses_uuid":"56402","courses_avg":0,"courses_pass":0},
+        {"courses_uuid":"56403","courses_avg":0,"courses_pass":0},
+        {"courses_uuid":"49835","courses_avg":1,"courses_pass":0}]}
+

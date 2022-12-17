@@ -1,0 +1,45 @@
+{
+    "title": "Very invalid query",
+    "query": {
+        "WHERE": {
+            "OR": [
+                {
+                    "AND": [
+                        {
+                            "GT": {
+                                "courses_avg": 90
+                            }
+                        },
+                        {
+                            "IS": {
+                                "courses_dept": "adhe"
+                            }
+                        },
+                        {
+                            "LT": {
+                                "courses_avg": 91
+                            }
+                        }
+                    ]
+                },
+                {
+                    "EQ": {
+                        "courses_pass": 345
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_i0",
+                "courses_avg",
+                "courses_pass"
+            ],
+            "ORDER": "courses_id"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}
+

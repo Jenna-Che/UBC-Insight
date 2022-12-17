@@ -1,0 +1,16 @@
+{
+    "title": "Very invalid query",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_instructor": "wilk, diana"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": null,
+            "ORDER": "courses_audit"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

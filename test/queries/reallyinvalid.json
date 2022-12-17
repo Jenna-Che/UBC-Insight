@@ -1,0 +1,20 @@
+{
+    "title": "invalid query with diffset",
+    "query": { "OPTIONS": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 97
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "course_dept",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    }
+    } ,
+    "isQueryValid": false,
+    "result": "InsightError"
+}

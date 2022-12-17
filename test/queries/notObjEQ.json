@@ -1,0 +1,42 @@
+{
+    "title": "NOt obj NOT",
+    "query": {
+        "title": "NOt obj NOT",
+        "query": {
+            "WHERE": {
+                "OR": [
+                    {
+                        "AND": [
+                            {
+                                "IS": {
+                                    "courses_dept": "adhe"
+                                }
+                            },
+                            {
+                                "LT": {
+                                    "courses_avg": 91
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "EQ": null
+                    }
+                ]
+            },
+            "OPTIONS": {
+                "COLUMNS": [
+                    "courses_dept",
+                    "courses_id",
+                    "courses_avg",
+                    "courses_pass"
+                ],
+                "ORDER": "courses_id"
+            }
+        },
+        "isQueryValid": false,
+        "result": "InsightError"
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

@@ -1,0 +1,28 @@
+{
+    "title": "SELECT dept, avg WHERE avg > 97",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_instructor": "wilk, diana"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg",
+                "courses_title"
+            ],
+            "ORDER": "courses_title"
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"courses_dept":"epse","courses_avg":88.48,"courses_title":"ed st dvl ds inc"},
+        {"courses_dept":"epse","courses_avg":89.77,"courses_title":"ed st dvl ds inc"},
+        {"courses_dept":"epse","courses_avg":89.97,"courses_title":"ed st dvl ds inc"},
+        {"courses_dept":"epse","courses_avg":89.56,"courses_title":"ed st dvl ds inc"},
+        {"courses_dept":"epse","courses_avg":85.38,"courses_title":"ed st dvl ds inc"},
+        {"courses_dept":"epse","courses_avg":87.75,"courses_title":"ed st dvl ds inc"},
+        {"courses_dept":"epse","courses_avg":93.65,"courses_title":"ed st dvl ds inc"},
+        {"courses_dept":"epse","courses_avg":87.76,"courses_title":"ed st dvl ds inc"},
+        {"courses_dept":"epse","courses_avg":89.35,"courses_title":"ed st dvl ds inc"},
+        {"courses_dept":"epse","courses_avg":97.41,"courses_title":"educ stds autism"}]}

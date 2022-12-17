@@ -1,0 +1,38 @@
+{
+    "title": "Very invalid query",
+    "query": {
+        "WHERE": {
+            "OR": [
+                {
+                    "AND": [
+                        {
+                            "GT": {
+                                "courses_": 90
+                            }
+                        },
+                        {
+                            "IS": {
+                                "courses_": "adhe"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "EQ": {
+                        "courses_": 95
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_",
+                "courses_",
+                "courses_"
+            ],
+            "ORDER": "courses_"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

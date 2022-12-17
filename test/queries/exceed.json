@@ -1,0 +1,18 @@
+{
+    "title": "SELECT dept, avg WHERE avg > 10",
+    "query": {
+        "WHERE": {
+        },
+        "OPTIONS": {
+            "ORDER": "courses_avg",
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_year",
+                "courses_avg"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result":"ResultTooLargeError"}
+

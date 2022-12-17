@@ -1,0 +1,47 @@
+
+{
+    "title": "Very invalid query",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "IS": {
+                        "rooms_furniture": "*Tables*"
+                    }
+                },
+                {
+                    "GT": {
+                        "rooms_seats": 300
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_shortname",
+                "avgLat"
+            ],
+            "ORDER": {
+                "dir": "DOWN",
+                "keys": [
+                    "avgLat",
+                    "rooms_shortname"
+                ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "rooms_shortname"
+            ],
+            "APPLY": [
+                {
+                    "avgLat": {
+                        "AVG": "rooms_lat"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"rooms_shortname":"HEBB","avgLat":49.27},{"rooms_shortname":"OSBO","avgLat":49.26},{"rooms_shortname":"LSC","avgLat":49.26}]}
+

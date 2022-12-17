@@ -1,0 +1,38 @@
+{
+    "title": "NOt obj NOT",
+    "query": {
+        "WHERE": {
+            "OR": [
+                {
+                    "AND": [
+                        {
+                            "GT": {
+                                "courses_year": 90
+                            }
+                        },
+
+                        {
+                            "LT": null
+                        }
+                    ]
+                },
+                {
+                    "EQ": {
+                        "courses_pass": 345
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg",
+                "courses_pass"
+            ],
+            "ORDER": "courses_id"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}
